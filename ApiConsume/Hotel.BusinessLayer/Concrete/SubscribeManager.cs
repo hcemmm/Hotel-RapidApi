@@ -1,4 +1,5 @@
-﻿using Hotel.DataAccessLayer.Abstract;
+﻿using Hotel.BusinessLayer.Abstract;
+using Hotel.DataAccessLayer.Abstract;
 using Hotel.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.BusinessLayer.Concrete
 {
-	public class SubscribeManager : ISubscribeDal
+	public class SubscribeManager : ISubscribeService
 	{
 		private readonly ISubscribeDal _subscribeDal;
 
@@ -17,27 +18,27 @@ namespace Hotel.BusinessLayer.Concrete
 			_subscribeDal = subscribeDal;
 		}
 
-		public void Delete(Subscribe t)
+		public void TDelete(Subscribe t)
 		{
 			_subscribeDal.Delete(t);
 		}
 
-		public Subscribe GetById(int id)
+		public Subscribe TGetById(int id)
 		{
 			return _subscribeDal.GetById(id);
 		}
 
-		public List<Subscribe> GetList()
+		public List<Subscribe> TGetList()
 		{
 			return _subscribeDal.GetList();
 		}
 
-		public void Insert(Subscribe t)
+		public void TInsert(Subscribe t)
 		{
 			_subscribeDal.Insert(t);
 		}
 
-		public void Update(Subscribe t)
+		public void TUpdate(Subscribe t)
 		{
 			_subscribeDal.Update(t);
 		}

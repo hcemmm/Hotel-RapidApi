@@ -1,4 +1,5 @@
-﻿using Hotel.DataAccessLayer.Abstract;
+﻿using Hotel.BusinessLayer.Abstract;
+using Hotel.DataAccessLayer.Abstract;
 using Hotel.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.BusinessLayer.Concrete
 {
-	public class ServiceManager : IServiceDal
+	public class ServiceManager : IServiceService
 	{
 		private readonly IServiceDal _serviceDal;
 
@@ -17,27 +18,27 @@ namespace Hotel.BusinessLayer.Concrete
 			_serviceDal = serviceDal;
 		}
 
-		public void Delete(Service t)
+		public void TDelete(Service t)
 		{
 			_serviceDal.Delete(t);
 		}
 
-		public Service GetById(int id)
+		public Service TGetById(int id)
 		{
 			return _serviceDal.GetById(id);
 		}
 
-		public List<Service> GetList()
+		public List<Service> TGetList()
 		{
 			return _serviceDal.GetList();
 		}
 
-		public void Insert(Service t)
+		public void TInsert(Service t)
 		{
 			_serviceDal.Insert(t);
 		}
 
-		public void Update(Service t)
+		public void TUpdate(Service t)
 		{
 			_serviceDal.Update(t);
 		}

@@ -1,4 +1,5 @@
-﻿using Hotel.DataAccessLayer.Abstract;
+﻿using Hotel.BusinessLayer.Abstract;
+using Hotel.DataAccessLayer.Abstract;
 using Hotel.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.BusinessLayer.Concrete
 {
-	public class StaffManager : IStaffDal
+	public class StaffManager : IStaffService
 	{
 		private readonly IStaffDal _staffDal;
 
@@ -17,29 +18,30 @@ namespace Hotel.BusinessLayer.Concrete
 			_staffDal = staffDal;
 		}
 
-		public void Delete(Staff t)
+		public void TDelete(Staff t)
 		{
 			_staffDal.Delete(t);
 		}
 
-		public Staff GetById(int id)
+		public Staff TGetById(int id)
 		{
 			return _staffDal.GetById(id);
 		}
 
-		public List<Staff> GetList()
+		public List<Staff> TGetList()
 		{
 			return _staffDal.GetList();
 		}
 
-		public void Insert(Staff t)
+		public void TInsert(Staff t)
 		{
 			_staffDal.Insert(t);
 		}
 
-		public void Update(Staff t)
+		public void TUpdate(Staff t)
 		{
 			_staffDal.Update(t);
 		}
+
 	}
 }
