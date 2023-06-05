@@ -23,4 +23,11 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.BusinessLayer\Hotel.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Hotel.DataAccessLayer\Hotel.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\Hotel.DtoLayer\Hotel.DtoLayer.csproj" />
+    <ProjectReference Include="..\Hotel.EntityLayer\Hotel.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
