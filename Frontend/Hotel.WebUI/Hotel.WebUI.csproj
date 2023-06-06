@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ApiConsume\Hotel.DataAccessLayer\Hotel.DataAccessLayer.csproj" />
     <ProjectReference Include="..\..\ApiConsume\Hotel.EntityLayer\Hotel.EntityLayer.csproj" />
   </ItemGroup>
 

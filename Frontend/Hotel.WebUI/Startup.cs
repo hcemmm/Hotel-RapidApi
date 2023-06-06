@@ -1,3 +1,5 @@
+using Hotel.DataAccessLayer.Concrete;
+using Hotel.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +24,9 @@ namespace Hotel.WebUI
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddDbContext<Context>();
+			services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>();
+
             services.AddAutoMapper(typeof(Startup));
 
             services.AddHttpClient();
@@ -49,7 +54,7 @@ namespace Hotel.WebUI
 			{
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
+					pattern: "{controller=Register}/{action=Index}/{id?}");
 			});
 		}
 	}
