@@ -20,7 +20,7 @@ namespace Hotel.DtoLayer.Dtos.RoomDto
         public string BedCount { get; set; }
         [Required(ErrorMessage = "Banyo sayısı bilgisi girilmesi gerekiyor")]
         public string BathCount { get; set; }
-        public string Wifi { get; set; }
+        public bool Wifi { get; set; }
         public string Description { get; set; }
     }
 }

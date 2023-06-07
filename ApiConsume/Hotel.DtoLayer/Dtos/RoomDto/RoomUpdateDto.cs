@@ -29,7 +29,7 @@ namespace Hotel.DtoLayer.Dtos.RoomDto
         [Required(ErrorMessage = "Banyo sayısı bilgisi girilmesi gerekiyor")]
         public string BathCount { get; set; }
 
-        public string Wifi { get; set; }
+        public bool Wifi { get; set; }
 
         [Required(ErrorMessage = "Oda açıklaması boş bırakılamaz")]
         public string Description { get; set; }
