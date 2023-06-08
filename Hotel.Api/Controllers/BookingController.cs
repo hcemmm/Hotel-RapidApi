@@ -47,17 +47,5 @@ namespace Hotel.Api.Controllers
             var values = _bookingService.TGetById(id);
             return Ok(values);
         }
-        [HttpPut("ApprovedBooking")]
-        public IActionResult ApprovedBooking(Booking booking)
-        {
-            _bookingService.TBookingStatusApproved(booking);
-            return Ok();
-        }
-        [HttpPut("ApprovedBookingSt")]
-        public IActionResult ApprovedBookingSt(int id)
-        {
-            _bookingService.TBookingStatusApproved2(id);
-            return Ok();
-        }
     }
 }
