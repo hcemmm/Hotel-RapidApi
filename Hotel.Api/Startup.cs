@@ -52,6 +52,9 @@ namespace Hotel.Api
             services.AddScoped<IBookingDal, EfBookingDal>();
             services.AddScoped<IBookingService, BookingManager>();
 
+            services.AddScoped<IGuestDal, EfGuestDal>();
+            services.AddScoped<IGuestService, GuestManager>();
+
             services.AddAutoMapper(typeof(Startup));
 
 			services.AddCors(opt =>
