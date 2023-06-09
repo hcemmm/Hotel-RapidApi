@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiConsume", "ApiConsume", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{1B7F3858-6218-403D-8312-0E260507E78E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList", "ToDoList", "{61982E21-9013-4294-9AAC-E347E4440F55}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.EntityLayer", "ApiConsume\Hotel.EntityLayer\Hotel.EntityLayer.csproj", "{EE187961-A981-4419-A898-74338BA503DA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.DataAccessLayer", "ApiConsume\Hotel.DataAccessLayer\Hotel.DataAccessLayer.csproj", "{DDD2C038-10F7-4BE6-BFF4-577547B640A8}"
@@ -20,10 +18,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.WebUI", "Frontend\Hotel.WebUI\Hotel.WebUI.csproj", "{32D96335-0462-43E0-B02F-9B6D65FDCB85}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Api", "Hotel.Api\Hotel.Api.csproj", "{2CF0A94B-8485-48DD-9975-C734C50FBD48}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidAPI", "RapidAPI", "{13C2A89A-EAE5-4F9D-8CAA-F7071C57782C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume", "RapidAPI\RapidAPIConsume\RapidAPIConsume.csproj", "{359C722B-0EB4-45C8-96D9-33A63D3A6A8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +49,6 @@ Global
 		{2CF0A94B-8485-48DD-9975-C734C50FBD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CF0A94B-8485-48DD-9975-C734C50FBD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CF0A94B-8485-48DD-9975-C734C50FBD48}.Release|Any CPU.Build.0 = Release|Any CPU
-		{359C722B-0EB4-45C8-96D9-33A63D3A6A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{359C722B-0EB4-45C8-96D9-33A63D3A6A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{359C722B-0EB4-45C8-96D9-33A63D3A6A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{359C722B-0EB4-45C8-96D9-33A63D3A6A8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,7 +60,6 @@ Global
 		{45F21158-CFDB-4F04-94BB-1772C0376B1D} = {2740D2BF-4FDA-41FB-96DE-C00DCFF7981B}
 		{32D96335-0462-43E0-B02F-9B6D65FDCB85} = {1B7F3858-6218-403D-8312-0E260507E78E}
 		{2CF0A94B-8485-48DD-9975-C734C50FBD48} = {2740D2BF-4FDA-41FB-96DE-C00DCFF7981B}
-		{359C722B-0EB4-45C8-96D9-33A63D3A6A8E} = {13C2A89A-EAE5-4F9D-8CAA-F7071C57782C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1472AC92-7455-4532-8FA6-EF869B9A35DA}

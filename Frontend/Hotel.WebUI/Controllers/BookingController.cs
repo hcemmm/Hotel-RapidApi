@@ -18,6 +18,11 @@ namespace Hotel.WebUI.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> ListBooking()
         {
             var client = _httpClientFactory.CreateClient();
