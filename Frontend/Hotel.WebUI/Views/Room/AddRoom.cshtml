@@ -1,0 +1,55 @@
+﻿@model RoomCreateDto
+
+@{
+    ViewData["Title"] = "AddRoom";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<form method="post">
+    <label style="font-display:block">Oda Numarası</label>
+    <input type="number" asp-for="RoomNumber" class="form-control" />
+    <span asp-validation-for="RoomNumber" class="text-danger"></span>
+    <br /><br />
+
+    <label>Oda Resmi</label>
+    <input type="file" asp-for="RoomCoverImage" class="form-control" />
+    <span asp-validation-for="RoomCoverImage" class="text-danger"></span>
+    <br /><br />
+
+    <label>Oda Tipi</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <span asp-validation-for="Title" class="text-danger"></span>
+    <br /><br />
+
+    <label>Oda Fiyatı</label>
+    <input type="number" asp-for="Price" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+    <br /><br />
+
+    <label>Yatak Sayısı</label>
+    <input type="number" asp-for="BedCount" class="form-control" />
+    <span asp-validation-for="BedCount" class="text-danger"></span>
+    <br /><br />
+
+    <label>Banyo Sayısı</label>
+    <input type="number" asp-for="BathCount" class="form-control" />
+    <span asp-validation-for="BathCount" class="text-danger"></span>
+    <br /><br />
+
+    <label>Wifi</label><br />
+    <input type="radio" id="var" asp-for="Wifi" value="1">
+    <label for="yok">Var</label>
+    <input type="radio" id="yok" asp-for="Wifi" value="0">
+    <label for="var">Yok</label> 
+    <span asp-validation-for="BathCount" class="text-danger"></span>
+    <br /><br />
+
+    <label>Oda Açıklaması</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br /><br />
+    <br />
+    <button class="btn mb-1 btn-rounded btn-outline-primary">Ekle</button>
+
+</form>
+
